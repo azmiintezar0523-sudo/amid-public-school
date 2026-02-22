@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AMRID Public School | Admissions Open 2026–27</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:'Poppins', sans-serif;
+    }
+
+    body{
+      background:#f4f7fb;
+      color:#333;
+    }
+
+    header{
+      background:linear-gradient(to right,#1e3c72,#2a5298);
+      color:white;
+      padding:20px 0;
+      text-align:center;
+    }
+
+    header h1{
+      font-size:32px;
+    }
+
+    header p{
+      font-size:18px;
+      margin-top:5px;
+    }
+
+    nav{
+      background:#fff;
+      display:flex;
+      justify-content:center;
+      padding:12px;
+      box-shadow:0 2px 5px rgba(0,0,0,0.1);
+      flex-wrap:wrap;
+    }
+
+    nav a{
+      margin:5px 15px;
+      text-decoration:none;
+      color:#2a5298;
+      font-weight:600;
+    }
+
+    nav a:hover{
+      color:#1e3c72;
+    }
+
+    .hero{
+      background:url('photo/five-happy-children-with-backpacks-jumping-joy_9975-108521.jpg.avif') center/cover no-repeat;
+      height:400px;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      color:white;
+      text-align:center;
+      position:relative;
+    }
+
+    .hero::after{
+      content:'';
+      position:absolute;
+      top:0;
+      left:0;
+      width:100%;
+      height:100%;
+      background:rgba(0,0,0,0.6);
+    }
+
+    .hero-content{
+      position:relative;
+      z-index:2;
+    }
+
+    .hero h2{
+      font-size:36px;
+      margin-bottom:15px;
+    }
+
+    .btn{
+      display:inline-block;
+      padding:10px 25px;
+      background:#ff9800;
+      color:white;
+      border-radius:25px;
+      text-decoration:none;
+      font-weight:600;
+      margin-top:10px;
+    }
+
+    .btn:hover{
+      background:#e68900;
+    }
+
+    section{
+      padding:50px 10%;
+      text-align:center;
+    }
+
+    section h2{
+      margin-bottom:25px;
+      font-size:28px;
+      color:#1e3c72;
+    }
+
+    .grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+      gap:20px;
+    }
+
+    .card{
+      background:white;
+      padding:20px;
+      border-radius:10px;
+      box-shadow:0 5px 15px rgba(0,0,0,0.1);
+      transition:0.3s;
+    }
+
+    .card:hover{
+      transform:translateY(-5px);
+    }
+
+    /* Gallery */
+
+    .gallery{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+      gap:15px;
+    }
+
+    .gallery img{
+      width:100%;
+      height:200px;
+      object-fit:cover;
+      border-radius:10px;
+      cursor:pointer;
+      transition:0.3s;
+    }
+
+    .gallery img:hover{
+      transform:scale(1.05);
+    }
+
+    .lightbox{
+      display:none;
+      position:fixed;
+      z-index:1000;
+      padding-top:60px;
+      left:0;
+      top:0;
+      width:100%;
+      height:100%;
+      background:rgba(0,0,0,0.9);
+    }
+
+    .lightbox img{
+      display:block;
+      margin:auto;
+      max-width:80%;
+      max-height:80%;
+    }
+
+    .lightbox span{
+      position:absolute;
+      top:20px;
+      right:35px;
+      color:white;
+      font-size:40px;
+      cursor:pointer;
+    }
+
+    footer{
+      background:#1e3c72;
+      color:white;
+      text-align:center;
+      padding:20px;
+    }
+
+    @media(max-width:768px){
+      .hero h2{
+        font-size:24px;
+      }
+    }
+
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>AMRID PUBLIC SCHOOL</h1>
+  <p>Admissions Open for 2026–27 | Classes: Nursery to VIII</p>
+</header>
+
+<nav>
+  <a href="#about">About</a>
+  <a href="#facilities">Facilities</a>
+  <a href="#gallery">Gallery</a>
+  <a href="#hostel">Hostel</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<div class="hero">
+  <div class="hero-content">
+    <h2>Quality Education with Moral Values</h2>
+    <p>Academic + Religious Education (English, Hindi, Urdu)</p>
+    
+  </div>
+</div>
+
+<section id="about">
+  <h2>About Our School</h2>
+  <p>
+    At AMRID Public School, we provide high-quality academic education along with 
+    religious education. Our aim is the overall development of students – both 
+    intellectually and morally.
+  </p>
+</section>
+
+<section id="facilities">
+  <h2>Our Facilities</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>Experienced Teachers</h3>
+      <p>Qualified and experienced staff dedicated to student success.</p>
+    </div>
+    <div class="card">
+      <h3>Safe Playground</h3>
+      <p>Spacious and secure playground for physical development.</p>
+    </div>
+    <div class="card">
+      <h3>Academic Excellence</h3>
+      <p>Strong focus on English, Hindi, Urdu and overall academics.</p>
+    </div>
+    <div class="card">
+      <h3>Moral Development</h3>
+      <p>We focus on discipline and character building.</p>
+    </div>
+  </div>
+</section>
+
+<section id="gallery">
+  <h2>Photo Gallery</h2>
+  <div class="gallery">
+    <img src="https://images.unsplash.com/photo-1596495577886-d920f1fb7238" onclick="openLightbox(this.src)">
+    <img src="https://images.unsplash.com/photo-1577896851231-70ef18881754" onclick="openLightbox(this.src)">
+    <img src="https://images.unsplash.com/photo-1606326608606-aa0b62935f2b" onclick="openLightbox(this.src)">
+    <img src="photo/images.jpeg" onclick="openLightbox(this.src)">
+    
+
+  </div>
+</section>
+
+<div id="lightbox" class="lightbox">
+  <span onclick="closeLightbox()">&times;</span>
+  <img id="lightbox-img">
+</div>
+
+<section id="hostel">
+  <h2>Hostel Facility</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>Comfortable Accommodation</h3>
+      <p>Well-maintained and secure hostel rooms.</p>
+    </div>
+    <div class="card">
+      <h3>Separate Hostels</h3>
+      <p>Separate facilities for boys and girls.</p>
+    </div>
+    <div class="card">
+      <h3>Girls Hostel up to Class 12</h3>
+      <p>Hostel facility available for girls up to Class XII.</p>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contact Us</h2>
+  <p><strong>Director:</strong> Md. Danish Raza</p>
+  <p>📞 9905430742</p>
+  <a href="tel:9905430742" class="btn">Call Now</a>
+</section>
+
+<footer>
+  <p>© 2026 AMRID Public School | All Rights Reserved</p>
+</footer>
+
+<script>
+function openLightbox(src){
+  document.getElementById("lightbox").style.display="block";
+  document.getElementById("lightbox-img").src=src;
+}
+
+function closeLightbox(){
+  document.getElementById("lightbox").style.display="none";
+}
+</script>
+
+</body>
+</html>
